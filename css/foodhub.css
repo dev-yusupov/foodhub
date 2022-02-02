@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+}
+
+
+/* Navbar */
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 20px 0px;
+}
+
+nav ul.nav-items {
+	align-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+nav ul.nav-items li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 35px;
+}
+
+nav ul.nav-items li a {
+	color: rgb(0,0,0);
+	text-decoration: none;
+	transition: .16s;
+	font-size: 16px;
+}
+
+nav ul.nav-items li a:hover, nav ul.nav-items li a.active {
+	color: #ff7a00;
+}
+
+nav .icon-section {
+	display: flex;
+	flex-direction: row;
+	margin-left: 50px;
+}
+nav .icon-section div {
+	padding: 5px 15px;
+}
