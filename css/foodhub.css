@@ -368,12 +368,12 @@ nav .hamburger div {
 }
 
 .subsription-section .submit-section input[type="text"] {
-	padding: 15px 20px;
-	width: 300px;
+	padding: 2.8% 5%;
+	width: 50%;
 }
 
 .subsription-section .submit-section a.submit-button {
-	padding: 9px 40px;
+	padding: 1.4% 5%;
 }
 
 /* DElivery Section */
@@ -409,7 +409,8 @@ nav .hamburger div {
 }
 
 .food-price-section img {
-	height: 130px;
+	height: initial;
+	width: 80%;
 }
 
 .bestsellers .bestseller-food {
@@ -423,13 +424,14 @@ nav .hamburger div {
 
 .bestsellers .bestseller-food .food-mockup-section {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 }
 
 .bestsellers .food-mockup-section img {
-	width: 200px;
-	padding: 5px 10px;
+	width: 100%;
+	padding: 15px 10px;
 }
 
 
