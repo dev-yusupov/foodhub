@@ -41,6 +41,10 @@ a:hover {
 	margin-top: 50px;
 }
 
+.ml-1 {
+	margin-left: 30px;
+}
+
 /* Navbar */
 nav {
 	display: flex;
@@ -67,6 +71,14 @@ nav ul.nav-items li {
 	padding: 5px 35px;
 }
 
+.nav-active {
+	background: white;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
 nav ul.nav-items li a {
 	color: rgb(0,0,0);
 	text-decoration: none;
@@ -87,6 +99,16 @@ nav .icon-section div {
 	padding: 5px 15px;
 }
 
+nav .hamburger {
+	display: none;
+}
+
+nav .hamburger div {
+	height: 3px;
+	width: 30px;
+	margin-top: 3px;
+	background: black;
+}
 /* Main Section */
 
 .main-section {
@@ -120,10 +142,324 @@ nav .icon-section div {
 .main-section .text-section .main-paragraph {
 	max-width: 400px;
 }
-
-.main-section .mockup-section {
-
-}
 .main-section .mockup-section img {
 	width: 468px;
+}
+
+/* Subscription Section */
+.subsription-section {
+	background: #ff7a00;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 70px 100px;
+}
+
+.subsription-section .text-section {
+	max-width: 300px;
+}
+
+.subsription-section .submit-section input[type="text"] {
+	padding: 25px 30px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	width: 500px;
+	outline: none;
+	border: none;
+}
+
+.subsription-section .submit-section a.submit-button {
+	background: black;
+	color: white;
+	font-size: 19px;
+	text-decoration: none;
+	padding: 20px 80px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+/* DElivery Section */
+.delivery-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: rgb(240,240,240);
+	padding: 60px;
+}
+
+.delivery-section .mockup-section img {
+	width: 600px;
+}
+
+.delivery-section .text-section {
+	max-width: 500px;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.delivery-section .text-section .title-section {
+	display: flex;
+  	align-items: center;
+}
+
+.delivery-section .text-section .title-section img {
+	height: 30px;
+
+}
+
+/* Food Price Section */
+.bestsellers {
+	background: rgb(240,240,240);
+}
+.bestsellers .food-price-section {
+	display: flex;
+	justify-content: center;
+	
+	padding: 80px;
+}
+
+.food-price-section img {
+	height: 270px;
+}
+
+.bestsellers .bestseller-food {
+	text-align: center;
+}
+
+.bestsellers .bestseller-food .title h2 {
+	color: #ff7a00;
+	font-size: 36px;
+}
+
+.bestsellers .bestseller-food .food-mockup-section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.bestsellers .food-mockup-section img {
+	width: 370px;
+	padding: 5px 10px;
+}
+
+
+/* Footer */
+footer {
+	background: #ff7a00;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 60px;
+}
+
+footer ul li {
+	list-style: none;
+}
+
+footer ul li a {
+	color: white;
+	text-decoration: none;
+}
+footer ul li a:hover {
+	color: rgb(200,200,200);
+}
+
+.sub-footer{
+	background: rgb(30,30,30);
+	color: white;
+	text-align: center;
+}
+.sub-footer a {
+	text-decoration: none;
+}
+
+@media (max-width: 800px) {
+	a {
+		font-size: 16px;
+	}
+
+.filled-button {
+	font-size: 12px;
+}
+
+/* Margins */
+.mt-1 {
+	margin-top: 40px;
+}
+
+.ml-1 {
+	margin-left: 25px;
+}
+
+/* Navbar */
+nav {
+	justify-content: space-between;
+	padding: 20px 10px;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul.nav-items {
+	display: none;
+}
+
+nav ul.nav-items li {
+	display: block;
+	padding: 5px 35px;
+}
+
+nav ul.nav-items li a {
+	color: rgb(0,0,0);
+	text-decoration: none;
+	transition: .16s;
+	font-size: 16px;
+}
+
+nav ul.nav-items li a:hover, nav ul.nav-items li a.active {
+	color: #ff7a00;
+}
+
+nav .icon-section div {
+	padding: 5px 15px;
+}
+
+nav .hamburger {
+	display: initial;
+}
+nav .hamburger div {
+	height: 3px;
+	width: 30px;
+	margin-top: 3px;
+	background: black;
+}
+
+/* Main Section */
+
+.main-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: initial;
+	padding: 10px 30px;
+	width: 100%;
+}
+
+.main-section .text-section .main-title h1.title {
+	font-size: 50px;
+	line-height: 60px;
+}
+
+.main-section .text-section .main-paragraph {
+	max-width: 250px;
+}
+.main-section .mockup-section img {
+	width: 358px;
+	margin-top: 100px;
+}
+
+/* Subscription Section */
+.subsription-section {
+	width: 100%;
+	flex-direction: column;
+	padding: 30px 40px;
+}
+
+.subsription-section .submit-section {
+	margin-top: 20px;
+}
+
+.subsription-section .submit-section input[type="text"] {
+	padding: 15px 20px;
+	width: 300px;
+}
+
+.subsription-section .submit-section a.submit-button {
+	padding: 9px 40px;
+}
+
+/* DElivery Section */
+.delivery-section {
+	width: 100%;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.delivery-section .mockup-section img {
+	width: 300px;
+}
+
+.delivery-section .text-section {
+	max-width: 500px;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.delivery-section .text-section .title-section {
+	display: flex;
+  	align-items: center;
+}
+
+.delivery-section .text-section .title-section img {
+	height: 30px;
+
+}
+
+/* Food Price Section */
+.bestsellers .food-price-section {
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+}
+
+.food-price-section img {
+	height: 200px;
+}
+
+.bestsellers .bestseller-food {
+	text-align: center;
+}
+
+.bestsellers .bestseller-food .title h2 {
+	color: #ff7a00;
+	font-size: 36px;
+}
+
+.bestsellers .bestseller-food .food-mockup-section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.bestsellers .food-mockup-section img {
+	width: 270px;
+	padding: 5px 10px;
+}
+
+
+/* Footer */
+footer {
+	background: #ff7a00;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 30px;
+}
+
+footer img {
+	width: 200px;
+}
+
+footer ul li {
+	list-style: none;
+}
+
+footer ul li a {
+	color: white;
+	text-decoration: none;
+}
+footer ul li a:hover {
+	color: rgb(200,200,200);
+}
+
+
 }
