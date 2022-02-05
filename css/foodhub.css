@@ -319,6 +319,19 @@ nav ul.nav-items li a:hover, nav ul.nav-items li a.active {
 	color: #ff7a00;
 }
 
+nav .nav-items-active {
+	left: 0;
+	right: 0;
+	top: 0;
+	text-align: center;
+	position: absolute;
+	margin-top: 80px;
+	z-index: 5;
+	background: white;
+	opacity: .9;
+	box-shadow: 5px 10px 10px 10px rgba(100,100,100,.3);
+}
+
 nav .icon-section div {
 	padding: 5px 15px;
 }
