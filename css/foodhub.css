@@ -294,10 +294,9 @@ footer ul li a:hover {
 
 /* Navbar */
 nav {
+	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
-	padding: 20px 10px;
-	align-items: center;
-	width: 100%;
 }
 
 nav ul.nav-items {
@@ -337,11 +336,10 @@ nav .hamburger div {
 /* Main Section */
 
 .main-section {
+	padding: 10px 30px;
 	display: flex;
 	flex-direction: column;
-	justify-content: initial;
-	padding: 10px 30px;
-	width: 100%;
+	align-items: unset;
 }
 
 .main-section .text-section .main-title h1.title {
@@ -362,10 +360,11 @@ nav .hamburger div {
 	width: 100%;
 	flex-direction: column;
 	padding: 30px 40px;
+	justify-content: unset;
 }
 
 .subsription-section .submit-section {
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 .subsription-section .submit-section input[type="text"] {
@@ -379,9 +378,9 @@ nav .hamburger div {
 
 /* DElivery Section */
 .delivery-section {
-	width: 100%;
 	flex-direction: column;
 	padding: 10px;
+	justify-content: unset;
 }
 
 .delivery-section .mockup-section img {
@@ -390,8 +389,6 @@ nav .hamburger div {
 
 .delivery-section .text-section {
 	max-width: 500px;
-	flex-wrap: wrap;
-	align-content: center;
 }
 
 .delivery-section .text-section .title-section {
@@ -412,7 +409,7 @@ nav .hamburger div {
 }
 
 .food-price-section img {
-	height: 200px;
+	height: 130px;
 }
 
 .bestsellers .bestseller-food {
@@ -431,7 +428,7 @@ nav .hamburger div {
 }
 
 .bestsellers .food-mockup-section img {
-	width: 270px;
+	width: 200px;
 	padding: 5px 10px;
 }
 
@@ -441,12 +438,16 @@ footer {
 	background: #ff7a00;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding: 30px;
 }
 
 footer img {
-	width: 200px;
+	width: 100px;
+}
+
+footer p {
+	font-size: 14px;
 }
 
 footer ul li {
