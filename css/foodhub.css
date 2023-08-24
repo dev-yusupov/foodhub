@@ -116,8 +116,7 @@ nav .hamburger div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  width: 400px;
 }
 
 .main-section .text-section .main-title {
