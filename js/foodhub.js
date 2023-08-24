@@ -19,7 +19,7 @@ hamburger.onclick = function () {
 }
 
 window.addEventListener("scroll", function(e){
-	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
     	nav.classList.add("nav-active");
   	} else if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     	nav.classList.remove("nav-active");
