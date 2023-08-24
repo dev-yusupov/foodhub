@@ -58,9 +58,9 @@ nav .logo-section img{
 }
 
 nav ul.nav-items {
-	align-content: center;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	flex-wrap: wrap;
 	align-content: center;
 }
@@ -72,12 +72,7 @@ nav ul.nav-items li {
 }
 
 .nav-active {
-	background: white;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
+	position: absolute;
 }
 nav ul.nav-items li a {
 	color: rgb(0,0,0);
@@ -93,20 +88,19 @@ nav ul.nav-items li a:hover, nav ul.nav-items li a.active {
 nav .icon-section {
 	display: flex;
 	flex-direction: row;
-	margin-left: 50px;
-}
-nav .icon-section div {
-	padding: 5px 15px;
+	column-gap: 30px;
+	/* margin-left: 50px; */
 }
 
 nav .hamburger {
 	display: none;
+	flex-direction: column;
+	row-gap: 2px;
 }
 
 nav .hamburger div {
 	height: 3px;
 	width: 30px;
-	margin-top: 3px;
 	background: black;
 }
 /* Main Section */
@@ -121,6 +115,8 @@ nav .hamburger div {
 .main-section .text-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 400px;
 }
 
 .main-section .text-section .main-title {
@@ -181,6 +177,7 @@ nav .hamburger div {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	column-gap: 50px;
 	align-items: center;
 	background: rgb(240,240,240);
 	padding: 60px;
@@ -294,8 +291,7 @@ footer ul li a:hover {
 nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	padding: 10px 15px;
+	align-items: center;
 }
 
 nav ul.nav-items {
@@ -327,16 +323,21 @@ nav .nav-items-active {
 	margin-top: 80px;
 	z-index: 5;
 	background: white;
-	opacity: .9;
+	opacity: .97;
 	box-shadow: 5px 10px 5px 5px rgba(100,100,100,.3);
+	padding: 30px;
+}
+nav .nav-items-active li {
+	list-style: none;
+	padding: 40px 0px;
+}
+nav .nav-items-active li a {
+	text-decoration: none;
 }
 
-nav .icon-section div {
-	padding: 5px 15px;
-}
 
 nav .hamburger {
-	display: initial;
+	display: flex;
 }
 nav .hamburger div {
 	height: 3px;
@@ -351,16 +352,18 @@ nav .hamburger div {
 	padding: 10px 30px;
 	display: flex;
 	flex-direction: column;
-	align-items: unset;
+	align-items: center;
 }
 
 .main-section .text-section .main-title h1.title {
 	font-size: 50px;
 	line-height: 60px;
+	text-align: center;
 }
 
 .main-section .text-section .main-paragraph {
-	max-width: 250px;
+	max-width: 100%;
+	text-align: center;
 }
 .main-section .mockup-section img {
 	width: 358px;
@@ -371,18 +374,25 @@ nav .hamburger div {
 .subsription-section {
 	flex-direction: column;
 	justify-content: center;
-	padding: 30px 50px;
+	text-align: center;
+	padding: 30px 20px;
 }
 
 .subsription-section .text-section {
-	max-width: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 100%;
 	margin-bottom: 20px;
+}
+.subsription-section .text-section p {
+	width: 100%;
 }
 
 .subsription-section .submit-section input[type="text"] {
 	padding: 15px 20px;
 	border-radius: 40px;
-	width: 200px;
+	width: 350px;
 }
 
 .subsription-section .submit-section a.submit-button {
@@ -390,7 +400,7 @@ nav .hamburger div {
 	color: white;
 	font-size: 15px;
 	text-decoration: none;
-	padding: 10px 30px;
+	padding: 10px 40px;
 	border-radius: 50px;
 }
 
@@ -399,7 +409,8 @@ nav .hamburger div {
 .delivery-section {
 	flex-direction: column;
 	padding: 10px;
-	justify-content: unset;
+	align-items: center;
+	text-align: center;
 }
 
 .delivery-section .mockup-section img {
@@ -407,12 +418,14 @@ nav .hamburger div {
 }
 
 .delivery-section .text-section {
-	max-width: 500px;
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .delivery-section .text-section .title-section {
-	display: flex;
-  	align-items: center;
+	text-align: center;
 }
 
 .delivery-section .text-section .title-section img {
@@ -457,11 +470,17 @@ nav .hamburger div {
 
 /* Footer */
 footer {
-	background: #ff7a00;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 30px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+}
+footer .logo-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 footer img {
@@ -471,7 +490,6 @@ footer img {
 footer p {
 	font-size: 14px;
 }
-
 footer ul li {
 	list-style: none;
 }
